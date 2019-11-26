@@ -11,7 +11,7 @@
 
 
 
-### 主从配置
+### 主从配置（注意：如果使用的是服务器，不要使用ipconfig的ip地址，该ip为服务器内网ip，请使用服务器的公网ip）
 
 ##### daemonize: 默认是no，表示义阻塞的方式开始服务， yes表示已后端守护进程开启
 
@@ -19,7 +19,7 @@
 
 ### 配置主
 
-- 查看当前主机的ip地址
+- 查看当前主机的ip地址    
 
   ```python
   ifconfig
@@ -123,7 +123,7 @@
 
 
 
-## redis集群
+## redis集群   （注意：如果使用的是服务器，不要使用ipconfig的ip地址，该ip为服务器内网ip，请使用服务器的公网ip）
 
 #### 为什么要有集群
 
@@ -222,13 +222,13 @@
 - 解决办法如下
 
   ```python
-  -- 先查看⾃⼰的 gem 源是什么地址
-  gem source -l -- 如果是https://rubygems.org/ 就需要更换
-  -- 更换指令为
+  # 先查看⾃⼰的 gem 源是什么地址
+  gem source -l # 如果是https://rubygems.org/ 就需要更换
+  # 更换指令为
   gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/
-  -- 通过 gem 安装 redis 的相关依赖
+  # 通过 gem 安装 redis 的相关依赖
   sudo gem install redis
-  -- 然后重新执⾏指令
+  # 然后重新执⾏指令
   ```
 
   ![image-20190829233302556](redis主从和集群.assets/image-20190829233302556-4121297.png)
