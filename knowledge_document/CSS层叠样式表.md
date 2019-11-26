@@ -70,9 +70,11 @@ HTML 标签原本被设计为用于定义文档内容。通过使用 `<h1>、<p>
 1. #### 内联方式（行内样式）
 
    就是在HTML的标签中使用style属性来设置css样式
-    格式： `<html标签 style="属性:值;属性:值;....">被修饰的内容</html标签>``
-
-   ``<p style="color:blue;font-family:隶书">在HTML中如何使用css样式</p>`
+    格式： 
+    ```
+    <html标签 style="属性:值;属性:值;....">被修饰的内容</html标签>  
+    <p style="color:blue;font-family:隶书">在HTML中如何使用css样式</p>
+    ```
 
     特点：仅作用于本标签
 
