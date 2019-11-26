@@ -105,7 +105,7 @@ HTML 标签原本被设计为用于定义文档内容。通过使用 `<h1>、<p>
 
    ```css
    <style type="text/css">
-   	@import "文件名.css
+   	@import "文件名.css"
    </style>
    ```
 
